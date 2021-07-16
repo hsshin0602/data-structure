@@ -18,7 +18,7 @@ class myQueue:
     def put(self,data):
         self.q.append(data)
     def get(self,data):
-        self.q.popleft(data)
+        self.q.popleft(data) #선입선출
     def qsize(self):
         return len(self.q)
     def getList(self):
