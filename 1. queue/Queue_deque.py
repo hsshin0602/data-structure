@@ -10,15 +10,14 @@ deque.remove(item): item을 데크에서 찾아 삭제한다.
 deque.rotate(num): 데크를 num만큼 회전한다(양수면 오른쪽, 음수면 왼쪽).
 '''
 from collections import deque
-import queue
 
 class myQueue:
     def __init__(self):
         self.q=deque()
     def put(self,data):
         self.q.append(data)
-    def get(self,data):
-        self.q.popleft(data) #선입선출
+    def get(self):
+        self.q.popleft() #선입선출
     def qsize(self):
         return len(self.q)
     def getList(self):
