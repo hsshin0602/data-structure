@@ -14,6 +14,7 @@ for _ in range(testcase):
             q.popleft()
             if idx.popleft()==M:
                 print(cnt)
+                break
         else:
             q.rotate(-1)
             idx.rotate(-1)
