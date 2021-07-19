@@ -9,8 +9,7 @@ class myqueue:
         self.queue.append(data)
     
     def get(self):
-        return self.queue.popleft() if self.qsize()==1 else self.queue.popleft()
-
+        return self.queue.popleft()
     def qsize(self):
         return len(self.queue)
 
