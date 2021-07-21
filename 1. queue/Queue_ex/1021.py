@@ -15,7 +15,6 @@ def rotate_right(q,n):
 
 def front(q):
     return q[0]
-    
 def qsize(q):
     return len(q)
 
@@ -39,6 +38,10 @@ for i in range(M):
             count+=cnt_right
             rotate_right(q, cnt_right)
             get(q)
+
+       
+            
+
 print(count)
 
 
