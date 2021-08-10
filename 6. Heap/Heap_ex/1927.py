@@ -14,7 +14,7 @@ class Heap:
             else:
                 break
 
-    def maxHeapify(self,idx):
+    def minHeapify(self,idx):
         parent=idx
         left=idx*2
         right=idx*2+1
@@ -26,7 +26,7 @@ class Heap:
 
         if parent != idx:
             self.arr[idx],self.arr[parent] = self.arr[parent],self.arr[idx]
-            self.maxHeapify(parent)
+            self.minHeapify(parent)
 
     def popRoot(self):
         if len(self.arr)==1:
@@ -38,7 +38,7 @@ class Heap:
             else:
                 ret=self.arr[1]
                 self.arr[1]=self.arr.pop()
-                self.maxHeapify(1)
+                self.minHeapify(1)
                 return ret
 
 case=int(sys.stdin.readline())
