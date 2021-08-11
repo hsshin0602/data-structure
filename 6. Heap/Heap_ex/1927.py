@@ -50,8 +50,7 @@ for i in range(case):
         print(result)
     else:
         heap.insert(num)
-        
-        
+                
 '''
 import heapq
 import sys
