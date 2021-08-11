@@ -51,5 +51,24 @@ for i in range(case):
     else:
         heap.insert(num)
         
+        
+'''
+import heapq
+import sys
+
+case=int(sys.stdin.readline())
+heap=[]
+
+for _ in range(case):
+    num=int(sys.stdin.readline())
+    if num != 0:
+        heapq.heappush(heap, num)
+    else:
+        try:
+            print(heapq.heappop(heap))
+        except:
+            print(0)
+'''
+        
 
 
